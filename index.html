@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="body">
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="navig">
           <a
@@ -53,8 +53,75 @@
             </li>
           </ul>
         </address>
+        <button type=button class="menu-open">svg</button>
       </div>
-    </header> -->
+
+      <!--============ mob-menu ============= -->
+
+
+      <div class="mob-menu">
+        <button type=button class="menu-clouse">x</button>
+      <nav>
+        <ul class="mob-navig-list">
+          <li class="mob-page-nav">
+            <a class="mob-page-nav-link hover" href="./index.html"
+              >Studio</a
+            >
+          </li>
+          <li class="mob-page-nav">
+            <a class="mob-page-nav-link" href="">Portfolio</a>
+          </li>
+          <li class="mob-page-nav">
+            <a class="mob-page-nav-link" href="">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="mob-address">
+        <ul class="mob-header-contact-list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="address-link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+110001111111" class="address-link"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="team-icon-list">
+        <li class="team-list">
+          <a class="team-icon-link" href="">
+            <svg class="team-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-list">
+          <a class="team-icon-link" href="">
+            <svg class="team-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-list">
+          <a class="team-icon-link" href="">
+            <svg class="team-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="team-list">
+          <a class="team-icon-link" href="">
+            <svg class="team-icon" width="16" height="16">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      </div>
+    </header>
     <main>
       <section class="section-oen section">
         <div class="container">
@@ -135,6 +202,7 @@
           <ul class="team">
             <li class="section-three-item">
               <img
+                srcset="./images/team-card1.jpg 1x, ./images/team-card1-2x.jpg 2x"
                 class="section-three-img"
                 src="./images/team-card1.jpg"
                 alt="Mark Guerrero"
@@ -179,6 +247,7 @@
 
             <li class="section-three-item">
               <img
+              srcset="./images/team-card2.jpg 1x, ./images/team-card2-2x.jpg 2x"
                 class="section-three-img"
                 src="./images/team-card2.jpg"
                 alt="Tom Ford"
@@ -222,6 +291,7 @@
             </li>
             <li class="section-three-item">
               <img
+              srcset="./images/team-card3.jpg 1x, ./images/team-card3-2x.jpg 2x"
                 class="section-three-img"
                 src="./images/team-card3.jpg"
                 alt="Camila Garcia"
@@ -265,6 +335,7 @@
             </li>
             <li class="section-three-item">
               <img
+              srcset="./images/team-card4.jpg 1x, ./images/team-card4-2x.jpg 2x"
                 class="section-three-img"
                 src="./images/team-card4.jpg"
                 alt="Daniel Wilson"
@@ -316,12 +387,24 @@
           <ul class="portfolio">
             <li class="section-four-item">
               <div class="portfolio-cover-wrap">
-                <img
-                  class="section-four-img"
-                  src="./images/img1.jpg"
-                  alt="Mark Guerrero"
-                  width="360"
-                />
+                <picture>
+                  <source 
+                  media="(min-width: 1440px)" 
+                  srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"/>
+                  <source 
+                  media="(min-width: 768px)" 
+                  srcset="./images/img1-tab.jpg 1x, ./images/img1-tab-2x.jpg 2x"/>
+                  <source 
+                  media="(max-width: 767px)" 
+                  srcset="./images/img1-mob.jpg 1x, ./images/img1-mob-2x.jpg 2x"/>
+                  <img
+                   class="section-four-img"
+                   src="./images/img1.jpg"
+                   alt="Mark Guerrero"
+                   width="360"
+                  />
+                </picture>
+                
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
