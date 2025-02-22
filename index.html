@@ -53,73 +53,84 @@
             </li>
           </ul>
         </address>
-        <button type=button class="menu-open">svg</button>
+        <button type=button class="menu-open">
+          <svg class="mob-menu-btn" width="16" height="14">
+            <use href="./images/icons.svg#icon-Group-mob"></use>
+          </svg>  </button>
       </div>
 
       <!--============ mob-menu ============= -->
 
 
       <div class="mob-menu">
-        <button type=button class="menu-clouse">x</button>
-      <nav>
-        <ul class="mob-navig-list">
-          <li class="mob-page-nav">
-            <a class="mob-page-nav-link hover" href="./index.html"
-              >Studio</a
-            >
+        <div>
+          <button type=button class="menu-clouse">
+            <svg class="icon-close-black-mob"  width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-mob"></use>
+          </svg>
+          </button>
+        <nav>
+          <ul class="mob-navig-list">
+            <li class="mob-page-nav">
+              <a class="mob-page-nav-link hover" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-page-nav">
+              <a class="mob-page-nav-link" href="">Portfolio</a>
+            </li>
+            <li class="mob-page-nav">
+              <a class="mob-page-nav-link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        </div>
+      <div>
+        <address class="mob-address">
+          <ul class="mob-header-contact-list">
+            <li class="mob-page-link">
+              <a href="mailto:info@devstudio.com" class="mob-address-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mob-page-link">
+              <a href="tel:+110001111111" class="address-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="team-icon-list">
+          <li class="team-list">
+            <a class="team-icon-link" href="">
+              <svg class="team-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </li>
-          <li class="mob-page-nav">
-            <a class="mob-page-nav-link" href="">Portfolio</a>
+          <li class="team-list">
+            <a class="team-icon-link" href="">
+              <svg class="team-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
-          <li class="mob-page-nav">
-            <a class="mob-page-nav-link" href="">Contacts</a>
+          <li class="team-list">
+            <a class="team-icon-link" href="">
+              <svg class="team-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-list">
+            <a class="team-icon-link" href="">
+              <svg class="team-icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </nav>
-      <address class="mob-address">
-        <ul class="mob-header-contact-list">
-          <li>
-            <a href="mailto:info@devstudio.com" class="address-link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+110001111111" class="address-link"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
-      <ul class="team-icon-list">
-        <li class="team-list">
-          <a class="team-icon-link" href="">
-            <svg class="team-icon" width="16" height="16">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="team-list">
-          <a class="team-icon-link" href="">
-            <svg class="team-icon" width="16" height="16">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="team-list">
-          <a class="team-icon-link" href="">
-            <svg class="team-icon" width="16" height="16">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="team-list">
-          <a class="team-icon-link" href="">
-            <svg class="team-icon" width="16" height="16">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      </div>
       </div>
     </header>
     <main>
@@ -593,8 +604,8 @@
     <!----------Modal--------->
 
     <div class="backdrop">
-      <!-- <div class="backdrop is-open"> -->
-      <!-- <div class="modal">
+      <div class="backdrop is-open">
+      <div class="modal">
         <button class="modal-btn" type="button">
           <svg class="modal-btn-clouse" width="8" height="8">
             <use href="./images/modalicons.svg#icon-modalbtn"></use>
@@ -681,7 +692,7 @@
           
           <button class="modal-but" type="submit">Send</button>
         </form>
-      </div> -->
+      </div>
     </div>
   </body>
 </html>
