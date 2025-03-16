@@ -797,7 +797,8 @@ color: var(--navy-blue);
   color: #f4f4fd;
   margin-right: auto;
   /* max-width: 264px; */
-  max-width: 288px;
+  width: 288px;
+  /* text-align: justify; */
 }
 
 .logo-block {
@@ -810,6 +811,7 @@ color: var(--navy-blue);
   margin-bottom: 16px;
   display: inline-block;
   /* align-items: center; */
+  
   
 }
 
@@ -1332,18 +1334,20 @@ textarea:focus {
     background: #2e2f42;
     padding-top: 100px;
     padding-bottom: 100px;
+    padding-left: 108px;
   }
 
   .footer-container {
     
     align-items: baseline; 
+    padding-right: 108px;
     
     
   }
 
 
   .subscribe-form {
-    margin-left: 80px;
+    margin-left: 0;
     
   }
   .footer-form {
@@ -1355,7 +1359,8 @@ textarea:focus {
   }
 
   .logo-block {
-    margin-right: 120px;
+    padding: 0;
+    
   }
   
   .footer-logo-web {
