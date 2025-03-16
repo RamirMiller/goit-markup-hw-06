@@ -807,7 +807,8 @@ color: var(--navy-blue);
 }
 
 .footer-logo-web {
-  
+  margin-left: 73px;
+  margin-right: auto;
   margin-bottom: 16px;
   display: inline-block;
   /* align-items: center; */
@@ -822,6 +823,7 @@ color: var(--navy-blue);
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  margin-left: 60px;
 }
 
 .footer-icon-block {
@@ -885,6 +887,7 @@ color: var(--navy-blue);
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
+  margin-left: 90px;
 }
 .footer-email {
 }
@@ -1373,6 +1376,17 @@ textarea:focus {
     width: 768px;
     height: 100%;
     
+  }
+  .footer-logo-web {
+    margin-left: 0;
+  }
+  .footer-paragraph {
+    margin-left: 0;
+  }
+
+  .footer-parag {
+  
+    margin-left: 0;
   }
 
 }
