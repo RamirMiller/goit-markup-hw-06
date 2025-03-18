@@ -49,7 +49,7 @@ button {
 }
 
 .container {
-  /* width: 1158px; */
+  
   width: 100%;  
   max-width: 320px;  
   margin: 0 auto;
@@ -433,7 +433,7 @@ color: var(--navy-blue);
   /* width: calc((100% - 3 * 24px) / 4); */
   width: 100%;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   flex-direction: column;
 }
 
@@ -1438,7 +1438,7 @@ textarea:focus {
 
 @media screen and (min-width: 1440px) {
   .container {
-    max-width: 1440px;
+    max-width: 1158px;
    }
 
    .header-container {
@@ -1540,6 +1540,7 @@ textarea:focus {
    }
    .section-two-item {
     width: calc((100% - 3 * 24px) / 4);
+    
    }
 
    .section-two-icon-background {
@@ -1576,7 +1577,7 @@ textarea:focus {
    }
    .section-four-portfolio {
     /* width: 1440px; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding-top: 120px;
     padding-bottom: 120px;
      
